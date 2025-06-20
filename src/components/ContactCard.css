@@ -1,0 +1,117 @@
+.contact-card {
+  background: #f0f4fa;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+
+.contact-card button {
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  margin-right: 4px;
+  background: #4a90e2;
+  color: #fff;
+  transition: background 0.2s;
+}
+.contact-card button:last-child {
+  margin-right: 0;
+}
+.contact-card button:hover {
+  background: #357ab8;
+}
+
+.card-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #4a90e2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 2rem;
+  margin-right: 18px;
+  overflow: hidden;
+}
+.card-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.card-details {
+  flex: 1;
+}
+.card-details h3 {
+  margin: 0 0 6px 0;
+}
+.card-actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 8px;
+}
+.edit-btn {
+  background: #4a90e2;
+  color: #fff;
+}
+.delete-btn {
+  background: #e74c3c;
+  color: #fff;
+}
+.edit-btn, .delete-btn {
+  border: none;
+  padding: 6px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background 0.2s;
+}
+.edit-btn:hover {
+  background: #357ab8;
+}
+.delete-btn:hover {
+  background: #c0392b;
+}
+
+.star-btn {
+  background: none;
+  border: none;
+  color: gold;
+  font-size: 1.3rem;
+  margin-left: 8px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+.group-badge {
+  display: inline-block;
+  background: #e0e7ef;
+  color: #357ab8;
+  border-radius: 10px;
+  padding: 2px 10px;
+  margin: 0 2px 2px 0;
+  font-size: 0.85rem;
+}
+.duplicate-btn, .details-btn {
+  background: #bbb;
+  color: #fff;
+}
+.duplicate-btn:hover, .details-btn:hover {
+  background: #888;
+}
+
+.card-avatar {
+  width: 64px;
+  height: 64px;
+  /* ... */
+}
+
+@media (max-width: 600px) {
+  .card-avatar {
+    width: 48px;
+    height: 48px;
+    font-size: 1.2rem;
+  }
+}

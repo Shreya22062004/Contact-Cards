@@ -1,0 +1,25 @@
+.notification {
+  position: fixed;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  color: #fff;
+  z-index: 9999;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  animation: fadeInOut 2s;
+}
+.notification.success {
+  background: #4caf50;
+}
+.notification.error {
+  background: #e74c3c;
+}
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0; }
+}

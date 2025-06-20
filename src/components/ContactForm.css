@@ -1,0 +1,65 @@
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+.contact-form input {
+  padding: 8px 12px;
+  font-size: 1rem;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+}
+.contact-form button {
+  background: #4a90e2;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+.contact-form button:hover {
+  background: #357ab8;
+}
+.avatar-upload {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.avatar-preview {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #e0e7ef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  font-size: 1.5rem;
+  color: #4a90e2;
+  margin-right: 8px;
+}
+.avatar-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.avatar-placeholder {
+  font-size: 1.5rem;
+}
+.avatar-upload-btn {
+  margin-left: 8px;
+  color: #357ab8;
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 0.95rem;
+}
+
+.form-error {
+  color: #e74c3c;
+  font-size: 0.95rem;
+  margin: -8px 0 8px 0;
+}

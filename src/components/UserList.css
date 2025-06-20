@@ -1,0 +1,26 @@
+.user-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.no-contacts {
+  text-align: center;
+  color: #888;
+}
+
+.user-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (min-width: 700px) {
+  .user-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1100px) {
+  .user-list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
