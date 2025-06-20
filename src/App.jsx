@@ -16,7 +16,9 @@ function sortContacts(contacts, sortBy, sortOrder) {
   } else if (sortBy === "createdAt") {
     sorted.sort((a, b) => b.createdAt - a.createdAt);
   } else if (sortBy === "favorite") {
-    sorted.sort((a, b) => (b.favorite === b.favorite ? 0 : b.favorite ? -1 : 1));
+    // Correct: favorites (true) come first
+    sorted.sort((a, b) => (b.favorite === a.favorite ? 0 : b.favorite ? 1 : -1));
+    // Alternatively, for ascending: sorted.sort((a, b) => (b.favorite ? 1 : 0) - (a.favorite ? 1 : 0));
   }
   if (sortOrder === "desc") sorted.reverse();
   return sorted;
@@ -121,6 +123,7 @@ const App = () => {
     [u.name, u.email].join(" ").toLowerCase().includes(searchTerm.toLowerCase())
   );
 
+
   // Sorting
   const handleSort = (e) => setSortBy(e.target.value);
   const handleSortOrder = () => setSortOrder(sortOrder === "asc" ? "desc" : "asc");
@@ -145,12 +148,13 @@ const App = () => {
           <option value="favorite">Favorites First</option>
         </select>
         <button onClick={handleSortOrder}>Sort: {sortOrder === "asc" ? "↑" : "↓"}</button>
-        <select value={filterGroup} onChange={handleGroupFilter}>
+        <select value={sortGroup} onChange={e => setSortGroup(e.target.value)}>
           <option value="">All Groups</option>
           {GROUPS.map((g) => (
             <option key={g}>{g}</option>
           ))}
         </select>
+
         <button onClick={() => setShowFavorites((f) => !f)}>
           {showFavorites ? "Show All" : "Show Favorites"}
         </button>
