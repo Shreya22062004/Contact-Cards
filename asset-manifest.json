@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Contact-Cards/static/css/main.a16701ec.css",
+    "main.js": "/Contact-Cards/static/js/main.49f270e1.js",
+    "index.html": "/Contact-Cards/index.html",
+    "main.a16701ec.css.map": "/Contact-Cards/static/css/main.a16701ec.css.map",
+    "main.49f270e1.js.map": "/Contact-Cards/static/js/main.49f270e1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a16701ec.css",
+    "static/js/main.49f270e1.js"
+  ]
+}
